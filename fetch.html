@@ -38,8 +38,11 @@
         .then(response => response.json())
         .then(responseData => {
           this.setState({
-            items: 
+            items: responseData.results
           })
+        })
+        .catch(error => {
+          console.log('Fetching and parsing data error', error);
         })
       }
       
