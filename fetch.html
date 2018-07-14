@@ -26,9 +26,13 @@
         };
       }
 
-      //componentDidMount
+      //componentDidMount() - this is a key Lifecycle method
       //most common use case: starting AJAX calls to load data for your component
       //can call setState
+
+      componentDidMount() {
+        fetch('https://swapi.co/api/people/');
+      };
       
       render() {
         return(
