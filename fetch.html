@@ -31,8 +31,17 @@
       //can call setState
 
       componentDidMount() {
-        fetch('https://swapi.co/api/people/');
-      };
+        fetch('https://swapi.co/api/people/')
+        /* .then(function(response) {
+          return response.json()
+        }) */
+        .then(response => response.json())
+        .then(responseData => {
+          this.setState({
+            items: 
+          })
+        })
+      }
       
       render() {
         return(
