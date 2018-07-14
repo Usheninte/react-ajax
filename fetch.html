@@ -39,7 +39,7 @@
         .then(responseData => {
           this.setState({
             items: responseData.results
-          })
+          });
         })
         .catch(error => {
           console.log('Fetching and parsing data error', error);
@@ -47,8 +47,14 @@
       }
       
       render() {
+        let items = this.state.items;
+        console.log(items);
         return(
-
+          <div>
+            {items.map(function(star) {
+              return star.name;
+            })}
+          </div>
         );
       }
     }
