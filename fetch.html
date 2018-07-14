@@ -52,7 +52,7 @@
         return(
           <div>
             {items.map(function(star) {
-              return <h4 key={star.name}>{star.name}</h4>;
+              return <p key={star.name}><b>{star.name}</b> has an eye colour of: <b>{star.eye_color}</b></p>;
             })}
           </div>
         );
