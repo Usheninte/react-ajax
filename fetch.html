@@ -52,7 +52,7 @@
         return(
           <div>
             {items.map(function(star) {
-              return star.name;
+              return <h4 key={star.name}>{star.name}</h4>;
             })}
           </div>
         );
