@@ -42,6 +42,10 @@ class App extends React.Component {
 }
 
 ReactDOM.render(
-  <App />,
+  <div>
+    <App />
+    <br /><br /><br />
+    <h3><a href="https://github.com/Usheninte/react-ajax">View on Github</a></h3>
+  </div>,
   document.getElementById("app")
 );
